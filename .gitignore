@@ -1,0 +1,95 @@
+# Python bytecode
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual environments
+env/
+venv/
+ENV/
+.VENV/
+
+# Secret files and settings
+*.env
+local_settings.py
+
+# Django-specific
+db.sqlite3               # Exclude SQLite databases if used for testing
+*.log                    # Log files
+media/                   # User-uploaded media
+staticfiles/             # Collected static files
+live_settings.py         # Example for environment-specific settings
+
+# Migrations
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# PostgreSQL
+*.pgsql
+*.pgpass
+.pgdata/                 # Docker PostgreSQL data directory (if mapped locally)
+
+# Docker and Docker Compose
+.dockerignore
+docker-compose.override.yml
+docker-compose.override.yaml
+docker-compose.yml~
+*.pid
+docker_logs/             # Exclude Docker logs if stored locally
+*.db-data                # Example for mapped database volumes
+
+# Coverage and Testing
+.coverage
+*.cover
+*.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+tests/__pycache__/
+
+# Sphinx documentation
+docs/_build/
+
+# IDE-specific files
+.idea/
+.vscode/
+*.swp
+
+# macOS-specific files
+.DS_Store
+
+# Windows-specific files
+Thumbs.db
+ehthumbs.db
+
+# Build files
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# PIP and Pipenv
+Pipfile.lock
+poetry.lock
+
+# PyInstaller
+*.manifest
+*.spec
+
+# pyenv
+.python-version
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# Temporary files and caches
+*.tmp
+*.cache
